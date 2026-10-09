@@ -8,12 +8,4 @@
     <loc>https://certonymity.com/about/</loc>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://certonymity.com/terms/</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://certonymity.com/privacy/</loc>
-    <priority>0.5</priority>
-  </url>
 </urlset>
