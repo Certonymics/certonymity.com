@@ -1,3 +1,7 @@
 /.well-known/*  /well-known/:splat  200
 /cemail-data-deletion  /cemail-data-deletion.html  200
+/terms          /                    301
+/terms/         /                    301
+/privacy        https://c.email/privacy-policy  301
+/privacy/       https://c.email/privacy-policy  301
 /*              /index.html          200

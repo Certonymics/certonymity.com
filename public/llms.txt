@@ -8,16 +8,23 @@ Certonymity is a privacy tech company building products to help develop the inte
 
 ## Certonymity's mission
 
-Certonymity was founded to solve the fundamental problem of digital identity: the tension between the individual right to privacy and freedom, and society's need for accountability and regulation. The company is actively creating the technology to solve this: a system for digital identity that provides anonymity by default and accountability when necessary.
+Certonymity was founded to solve the problem at the heart of the internet as it is now: how can our need for verified identity and accountability be reconciled with the fundamental right to privacy? Its answer is cDot: a new network designed to solve the problems of privacy and security everywhere on the internet — from proving who you are to sending messages and moving money.
 
 ## Certonymity products
 
 Certonymity's first product is c.Email, an app and browser extension that allows users to send and receive end-to-end encrypted emails without relying on third parties or complex setups. Combining advanced cryptography with real-world identity verification, c.Email lets people send private and safe messages from their existing email address – providing both freedom from surveillance and protection from fraud. For more information about c.Email, reference https://c.email/.
 
-Beyond c.Email, Certonymity is currently developing a full range of privacy-focused products to make the internet better for everyone who uses it — everywhere from communications to payments to proving your identity.
+Beyond c.Email, Certonymity's main product is cDot (https://cdot.world/), the app for secure identity, chat, email and payments. Alongside the release of the cDot app, the cDot framework will soon be available for others to build on — bringing Certonymity one step closer to its vision of a secure, permissionless, community-driven internet.
+
+## How Certonymity, c.Email and cDot relate
+
+- Certonymity Ltd (London, UK; https://certonymity.com/) is the company that builds both c.Email and cDot.
+- c.Email (https://c.email/) is Certonymity's first product and is live now on iOS, Android and as a Chrome extension.
+- cDot (https://cdot.world/) is Certonymity's network and app for secure identity, communication and payments. It is built by the same team behind c.Email.
+- Contact: info@certonymity.com
 
 ## Privacy and security
 
 Certonymity's products have been created specifically to help people protect their digital privacy and online safety with a combination of post-quantum secure encryption and privacy-preserving identity verification.
 
-By design, Certonymity collects as little information on users as possible and only where absolutely necessary to fulfil product functionality. In c.Email, email encryption and decryption always takes place on user devices, not c.Email servers. Users' private decryption keys and/or personal data are never stored anywhere other than their own device. For more information, reference our https://certonymity.com/privacy.
+By design, Certonymity collects as little information on users as possible and only where absolutely necessary to fulfil product functionality. In c.Email, email encryption and decryption always takes place on user devices, not c.Email servers. Users' private decryption keys and/or personal data are never stored anywhere other than their own device. For more information, reference https://c.email/privacy-policy.
