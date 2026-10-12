@@ -64,7 +64,7 @@ body.home {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 24px 88px;
+    padding: 96px 24px 128px;
 }
 
 /* cprint mark from cdot-app's hero, magnified so only a slice shows.
@@ -119,12 +119,25 @@ body.legal .content {
     flex-direction: column;
 }
 
+/* ─── Keyboard focus ─────────────────────────────────── */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+.thank-you-message:focus {
+    outline: none;
+}
+
 /* ─── Logo (homepage) ────────────────────────────────── */
 
 .logo {
     width: 88px;
     height: auto;
-    margin-bottom: 28px;
+    margin-bottom: 36px;
     filter: drop-shadow(0 0 28px rgba(var(--brand-rgb), 0.45));
 }
 
@@ -139,7 +152,7 @@ body.legal .content {
     line-height: 1.05;
     max-width: 780px;
     text-wrap: balance;
-    margin-bottom: 44px;
+    margin-bottom: 64px;
 }
 
 /* ─── Products ───────────────────────────────────────── */
@@ -148,12 +161,12 @@ body.legal .content {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 48px;
 }
 
 .product p {
     font-size: clamp(16px, 2vw, 18px);
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--ink-dim);
 }
 
@@ -163,12 +176,11 @@ body.legal .content {
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--cyan) !important;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .product a,
-.about-blocks a,
-.about-cta a {
+.about-blocks a {
     color: var(--ink);
     font-weight: 500;
     text-decoration: none;
@@ -177,8 +189,7 @@ body.legal .content {
 }
 
 .product a:hover,
-.about-blocks a:hover,
-.about-cta a:hover {
+.about-blocks a:hover {
     color: var(--cyan);
     border-color: var(--cyan);
 }
@@ -203,29 +214,89 @@ body.about .logo {
     margin-bottom: 24px;
 }
 
+body.about {
+    align-items: flex-start;
+    padding-top: 144px;
+    padding-bottom: 128px;
+}
+
 body.about .slogan {
     max-width: none;
-    margin-bottom: 40px;
+    text-wrap: wrap;
+    margin-bottom: 56px;
 }
 
 .about-blocks {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
 }
 
 .about-blocks p {
     font-size: clamp(16px, 2vw, 18px);
-    line-height: 1.7;
+    line-height: 1.8;
     color: var(--ink-dim);
 }
 
-.about-cta {
-    margin-top: 12px;
-    font-size: clamp(16px, 2vw, 18px);
-    color: var(--ink-dim);
+/* Privacy notice (Contact page) */
+.about-blocks.notice {
+    margin-top: 80px;
+    gap: 16px;
 }
+
+.about-blocks.notice h2.eyebrow {
+    margin-bottom: 0;
+}
+
+.about-blocks.notice p {
+    font-size: clamp(14px, 1.8vw, 16px);
+}
+
+/* CTA buttons */
+.about-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 24px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--brand-strong);
+    color: #ffffff;
+    box-shadow: 0 6px 30px rgba(var(--brand-rgb), 0.35);
+}
+
+.btn-primary:hover {
+    background-color: var(--brand);
+    box-shadow: 0 10px 38px rgba(var(--brand-rgb), 0.45);
+}
+
+.btn-ghost {
+    background-color: var(--card);
+    border-color: var(--line);
+    color: var(--ink);
+}
+
+.btn-ghost:hover {
+    border-color: rgba(var(--brand-rgb), 0.8);
+    background-color: rgba(var(--brand-rgb), 0.12);
+}
+
 
 /* ─── Store links ────────────────────────────────────── */
 
@@ -234,7 +305,7 @@ body.about .slogan {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 18px;
+    margin-top: 24px;
 }
 
 .product .store-link {
@@ -263,6 +334,7 @@ body.about .slogan {
 /* ─── Waitlist form ──────────────────────────────────── */
 
 .form-label {
+    display: block;
     font-size: 15px;
     font-weight: 500;
     color: var(--ink);
@@ -273,8 +345,8 @@ body.about .slogan {
 .waiting-list-form {
     width: 100%;
     max-width: 520px;
-    margin: 44px auto 0;
-    padding-top: 32px;
+    margin: 72px auto 0;
+    padding-top: 48px;
     border-top: 1px solid var(--line);
 }
 
@@ -341,7 +413,7 @@ body.about .slogan {
 .thank-you-message {
     width: 100%;
     max-width: 520px;
-    margin: 44px auto 0;
+    margin: 72px auto 0;
     padding: 16px 24px;
     background-color: var(--card);
     border: 1px solid var(--line);
@@ -428,7 +500,8 @@ body.about .slogan {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 28px;
+    flex-wrap: wrap;
+    gap: 6px 28px;
     padding: 18px 24px;
     border-top: 1px solid var(--line);
     z-index: 5;
@@ -455,6 +528,10 @@ body.about .slogan {
     display: block;
 }
 
+.footer-copyright a {
+    color: inherit;
+}
+
 .footer-copyright {
     font-size: clamp(11px, 1.5vw, 13px);
     color: var(--ink-faint);
@@ -466,7 +543,7 @@ body.about .slogan {
 @media (max-width: 767px) {
     body.home {
         align-items: flex-start;
-        padding: 56px 20px 120px;
+        padding: 64px 20px 128px;
     }
 
     body.legal {
@@ -484,12 +561,12 @@ body.about .slogan {
     }
 
     .slogan {
-        margin-bottom: 40px;
+        margin-bottom: 48px;
     }
 
     .waiting-list-form,
     .thank-you-message {
-        margin-top: 48px;
+        margin-top: 56px;
     }
 
     .form-group {
@@ -502,9 +579,23 @@ body.about .slogan {
         flex: none;
     }
 
+    body.about {
+        padding-top: 88px;
+        padding-bottom: 128px;
+    }
+
+    .about-blocks {
+        gap: 28px;
+    }
+
+    .about-ctas .btn {
+        flex: 1 1 100%;
+    }
+
     .footer {
         flex-wrap: wrap;
-        gap: 10px 20px;
+        gap: 8px 20px;
         padding: 12px 16px;
     }
 }
+

@@ -5,3 +5,13 @@
 
 [build.environment]
   NODE_VERSION = "18"
+
+# Baseline security headers. No CSP yet: the thank-you message uses an inline
+# style attribute, so a strict style-src would need that refactored first.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
