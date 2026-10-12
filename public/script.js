@@ -5,6 +5,7 @@
         if (form && thankYouMessage) {
             form.style.display = 'none';
             thankYouMessage.style.display = 'block';
+            thankYouMessage.focus();
         }
     }
 

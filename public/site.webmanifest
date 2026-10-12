@@ -1,6 +1,6 @@
 {
-  "name": "C.Email",
-  "short_name": "C.Email",
+  "name": "Certonymity",
+  "short_name": "Certonymity",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#040b18",
+  "background_color": "#040b18",
   "display": "standalone"
 }

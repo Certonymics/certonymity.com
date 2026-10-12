@@ -19,12 +19,29 @@ Beyond c.Email, Certonymity's main product is cDot (https://cdot.world/), the ap
 ## How Certonymity, c.Email and cDot relate
 
 - Certonymity Ltd (London, UK; https://certonymity.com/) is the company that builds both c.Email and cDot.
-- c.Email (https://c.email/) is Certonymity's first product and is live now on iOS, Android and as a Chrome extension.
-- cDot (https://cdot.world/) is Certonymity's network and app for secure identity, communication and payments. It is built by the same team behind c.Email.
+- c.Email (https://c.email/) is Certonymity's first product and is live now on iOS, Android and as a Chrome extension. It is built on the cDot framework.
+- cDot (https://cdot.world/) is Certonymity's network for secure identity, communication and payments, built on the C-Layer blockchain. It is built by the same team behind c.Email. The cDot app, the consumer product built on the network, has not been released yet.
+
+## Company details
+
+- Certonymity Ltd, registered in England and Wales, company number 16871742.
+- Registered office: 86–87 Campden Street, London, W8 7EN.
 - Contact: info@certonymity.com
+
+## Pages on this site
+
+- [Home](https://certonymity.com/): who Certonymity is, its products (c.Email, cDot) and the early-access waiting list.
+- [About](https://certonymity.com/about/): Certonymity's mission, products and team.
+- [Contact](https://certonymity.com/contact/): email address, registered company details and the privacy notice for this site (https://certonymity.com/contact/#privacy).
+- [c.Email data deletion](https://certonymity.com/cemail-data-deletion): how to request deletion of app data.
+
+## Related sites (each publishes its own llms.txt)
+
+- [c.Email: information for LLMs](https://c.email/llms.txt): what c.Email is, how it works and how it compares.
+- [cDot: information for LLMs](https://cdot.world/llms.txt): the cDot network, the C-Layer and how it works.
 
 ## Privacy and security
 
 Certonymity's products have been created specifically to help people protect their digital privacy and online safety with a combination of post-quantum secure encryption and privacy-preserving identity verification.
 
-By design, Certonymity collects as little information on users as possible and only where absolutely necessary to fulfil product functionality. In c.Email, email encryption and decryption always takes place on user devices, not c.Email servers. Users' private decryption keys and/or personal data are never stored anywhere other than their own device. For more information, reference https://c.email/privacy-policy.
+By design, Certonymity collects as little information on users as possible and only where absolutely necessary to fulfil product functionality. In c.Email, email encryption and decryption always takes place on user devices, not c.Email servers. Users' private decryption keys and/or personal data are never stored anywhere other than their own device. For more information, reference https://c.email/privacy-policy, or the privacy notice for this website at https://certonymity.com/contact/#privacy.
