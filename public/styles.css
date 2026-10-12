@@ -530,6 +530,7 @@ body.about .slogan {
 
 .footer-copyright a {
     color: inherit;
+    font-size: inherit;
 }
 
 .footer-copyright {
