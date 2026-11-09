@@ -21,7 +21,7 @@ Consistency rules the script enforces: `og:title` and `twitter:title` equal `<ti
 
 ## Conventions
 
-- Footer on every page: About, Contact, c.Email, cDot, then "© 2026 Certonymity" (a link to the homepage on every page except the homepage). The company details live on `/contact/`, together with the privacy notice (`/contact/#privacy`). There are no Terms or Privacy pages here, and `/terms` and `/privacy` are redirected in `public/_redirects`.
+- Footer on every page: Home (the homepage), About, Contact, cDot, a LinkedIn icon, then "© 2026 Certonymity" as plain text. The company details live on `/contact/`, together with the privacy notice (`/contact/#privacy`). There are no Terms or Privacy pages here, and `/terms` and `/privacy` are redirected in `public/_redirects`.
 - External links open in a new tab with `rel="noopener noreferrer"`.
 - Fonts are self-hosted (Inter, Darker Grotesque). Don't add third-party requests (fonts, analytics, embeds) without asking, because the site sets no cookies and has no consent banner.
 - Git commits: don't add a Co-Authored-By line.
