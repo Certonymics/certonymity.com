@@ -30,8 +30,8 @@ Beyond c.Email, Certonymity's main product is cDot (https://cdot.world/), the ap
 
 ## Pages on this site
 
-- [Home](https://certonymity.com/): who Certonymity is, its products (c.Email, cDot) and the early-access waiting list.
-- [About](https://certonymity.com/about/): Certonymity's mission, products and team.
+- [Home](https://certonymity.com/): who Certonymity is, cDot, and the early-access waiting list.
+- [About](https://certonymity.com/about/): Certonymity's mission, cDot and team.
 - [Contact](https://certonymity.com/contact/): email address, registered company details and the privacy notice for this site (https://certonymity.com/contact/#privacy).
 - [c.Email data deletion](https://certonymity.com/cemail-data-deletion): how to request deletion of app data.
 

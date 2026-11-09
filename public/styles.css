@@ -345,9 +345,7 @@ body.about .slogan {
 .waiting-list-form {
     width: 100%;
     max-width: 520px;
-    margin: 72px auto 0;
-    padding-top: 48px;
-    border-top: 1px solid var(--line);
+    margin: 64px auto 0;
 }
 
 .form-group {
@@ -413,7 +411,7 @@ body.about .slogan {
 .thank-you-message {
     width: 100%;
     max-width: 520px;
-    margin: 72px auto 0;
+    margin: 64px auto 0;
     padding: 16px 24px;
     background-color: var(--card);
     border: 1px solid var(--line);
@@ -522,15 +520,18 @@ body.about .slogan {
     color: var(--ink);
 }
 
-.footer-logo img {
-    height: 24px;
-    width: auto;
-    display: block;
+/* LinkedIn icon: 24px+ hit area, same dim colour as the text links */
+.footer .footer-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin: -4px 0;
 }
 
-.footer-copyright a {
-    color: inherit;
-    font-size: inherit;
+.footer .footer-social svg {
+    display: block;
 }
 
 .footer-copyright {
