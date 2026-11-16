@@ -22,6 +22,7 @@ Consistency rules the script enforces: `og:title` and `twitter:title` equal `<ti
 ## Conventions
 
 - Footer on every page: Home (the homepage), About, Contact, cDot, a LinkedIn icon, then "© 2026 Certonymity" as plain text. The company details live on `/contact/`, together with the privacy notice (`/contact/#privacy`). There are no Terms or Privacy pages here, and `/terms` and `/privacy` are redirected in `public/_redirects`.
+- Icons: the split is deliberate. `favicon.svg` is the circular logo and is what modern browsers show in tabs. The raster icons (`favicon.ico`, `apple-touch-icon.png`, `web-app-manifest-*.png`, `favicon-96x96.png`) must be **full-bleed and fully opaque** (a solid `#566afd` square with a white ring, no transparent corners or ring), because Google Search, iOS, Safari and Android show the background through transparency. Google documents only raster favicon formats and its choice between several icons is undocumented, so keep SVG in the page as the browser icon and the ICO as the raster one. Regenerate sizes from `web-app-manifest-512x512.png`. `maskable` manifest icons keep the mark at 80%. After changing icons, request a re-crawl in Search Console.
 - External links open in a new tab with `rel="noopener noreferrer"`.
 - Fonts are self-hosted (Inter, Darker Grotesque). Don't add third-party requests (fonts, analytics, embeds) without asking, because the site sets no cookies and has no consent banner.
 - Git commits: don't add a Co-Authored-By line.

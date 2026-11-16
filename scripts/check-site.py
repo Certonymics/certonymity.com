@@ -100,6 +100,21 @@ for p in ("contact/index.html",):
 mf = json.load(open("site.webmanifest"))
 if mf.get("name") != "Certonymity": bad("site.webmanifest", f"name is {mf.get('name')!r}, expected 'Certonymity'")
 
+# icons must be opaque (full-bleed): transparent corners/ring show the host tile through in search results
+try:
+    from PIL import Image
+    for f in glob.glob("favicon*.png") + glob.glob("apple-touch-icon.png") + glob.glob("web-app-manifest-*.png"):
+        im = Image.open(f).convert("RGBA")
+        if any(p[3] < 255 for p in im.getdata()): bad(f, "icon has transparent pixels (icons must be opaque / full-bleed)")
+    for fr in Image.open("favicon.ico").ico.sizes() if hasattr(Image.open("favicon.ico"), "ico") else []:
+        pass
+except ImportError:
+    print("note: Pillow not installed, skipped icon opacity check (run with /usr/bin/python3 to include it)")
+for page in pages:
+    t = open(page).read()
+    for needle in ('rel="icon"', 'rel="apple-touch-icon"', 'rel="manifest"'):
+        if needle not in t: bad(page, f"missing {needle} link")
+
 # redirects point at real things
 for line in open("_redirects"):
     parts = line.split()
